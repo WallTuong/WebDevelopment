@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Contact</title>
+        <link rel="icon" href="#">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="split" id="cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Leave us a message</h1>
+            <p>Tell us what you are looking for and we will get back to you within 24 hours.</p>
+            <p>Call us on: (+45) 12 34 56 78</p>
+            <p>or leave us a message.</p>
+
+            <div class="form-container">
+                <form> <!--add when after learning JS-->
+                    <label for="name" id="labelComments">Name:</label><br>
+                    <input type="text" id="nameComments" placeholder="John Doe"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="emailComments" placeholder="fake@gmail.com"><br>
+                    <label for="comment">Comments:</label><br>
+                    <textarea for="comment" id="textComments" rows="4" cols="30"></textarea><br>
+                    <button type="button" id="buttonComments">Submit</button>
+                </form>
+            </div>
+            <div class="comments-container">
+                <pre id="com1"></pre>
+            </div>
+
+            <h3>We are located here!</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2265.5265410235475!2d10.386342592343155!3d55.401166019071056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdffedc124cf5%3A0xa7d09fcb6d244cfb!2sOdense%20Baneg%C3%A5rd%20Center!5e0!3m2!1sda!2sdk!4v1697080455178!5m2!1sda!2sdk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo-footer">
+            <img id="logo-btm" src="logo/myLogo.png" height="75px">
+        </div>
+        <h3>WTG Software ApS<br> Jernbanegade 17<br> 5000 Odense C</h3>
+        <div class="icons-footer">
+            <a href="https://maps.app.goo.gl/Zxx6t7wqH3yGbWCL6">
+                <i class="fa-solid fa-location-dot" style="color: hsl(0, 3%, 10%);"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i class="fa-brands fa-square-facebook" style="color: hsl(220, 46%, 48%);"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i class="fa-brands fa-linkedin" style="color: hsl(201, 100%, 35%);"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i class="fa-brands fa-instagram" style="color: hsl(308, 73%, 53%);"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i class="fa-brands fa-youtube" style="color: hsl(0, 100%, 50%);"></i>
+            </a>
+        </div>
+        <p>
+            Author: Wallz 
+            &copy; 2023 copyright reserved.<br>
+            <small><a href="mailto:fake@gmail.com">fake@gmail.com</a></small>
+        </p>
+    </footer>
+        <script src="contact.js"></script>
+    </body>
+</html>
