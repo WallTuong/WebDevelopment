@@ -11,31 +11,34 @@ html{
 body{
     margin: 0;
 }
-
-.header-container{
-    display: flex;
-    background-color: hsl(0, 0%, 100%);
-    color: #ffffff;
-    height: 300px;
+/* header */
+header {
     background-image: url(/images/header-background.jpg);
     background-position: center;
-    background-size: contain;
-    flex-grow: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-container{
+    display: flex;
+    color: #ffffff;
+    height: 250px;
 }
 
-.logo-header img{
+.logo-header{
     margin-left: 10px;
-    margin-top: -10px;
-    height: 100px;
+    height: 80px;
+    border: solid 2px white;
+    background-color: #303235;
+    font-weight: bold;
+    text-align: center;
     flex-shrink: 0;
 }
 
 .search-container{
-    display: block;
     float: left;
+    margin-right: auto;
     margin-top: 15px;
     margin-left: 15px;
-    margin-right: 120px;
     flex-grow: 1;
 }
 
@@ -44,7 +47,7 @@ body{
     border-radius: 20px 0px 0px 20px;
     border: solid 1px;
     border-right: none;
-    width: 60%;
+    width: 90%;
     height: 40px;
     text-indent: 10px;
     font-size: 1.2rem;
@@ -67,11 +70,12 @@ input:focus{
 }
 
 .icons-top{
+    float: right;
     color: #ffffff;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin-right: 10px;
+    padding: 5px;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 5px;
     margin-top: 15px;
 }
 .icons-top a:hover{
@@ -94,9 +98,17 @@ input:focus{
 }
 
 .icons-top i{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
+.header-txt {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+/* main content */
 .navbar{
     background-color: #ffffff;
     text-align: center;
