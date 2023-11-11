@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" href="logo/myLogo.png">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/d09c27a135.js" crossorigin="anonymous"></script>
+        <script src="index.js" defer></script>
     </head>
     <body>
         
@@ -16,9 +17,6 @@
                 <div class="logo-header">
                     <p>Div for logo</p>
                 </div>
-            <div class="header-txt">
-               
-            </div>
             
             <div class="search-container"> <!--JS what to do-->
                 <form action="#">
@@ -46,156 +44,71 @@
                     <i class="fa-solid fa-globe"></i>
                 </a>
             </div>
-        </div>  
-        
-        <div class="header-txt">
-            <h3>Looking for your new adventures?</h3>
-        </div>     
+
         </header>
-
-            <nav class="navbar">
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="game.html">Games</a></li>
-                    <li><a href ="about.html" target="_self">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            
             <main>
-                
+                       
+                <div class="navbar">
+                    <a class="link" href="#">Home</a>
+            
+                    <div class="dropdown" data-dropdown> 
+                            <button class="link" data-dropdown-button>Products</button>
+                            <div class="dropdown-menu information-links">
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">Sport</a>
+                                    <a href="#" class="link">Culture</a>
+                                    <a href="#" class="link">Food</a>
+                                    <a href="#" class="link">Water</a>
+                                </div>
+                            </div>
+                    </div>
+            
+                    <div class="dropdown" data-dropdown>
+                            <button class="link" data-dropdown-button>Games</button>
+                            <div class="dropdown-menu information-links">
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">Snake</a>
+                                    <a href="#" class="link">Ping Pong</a>
+                                    <a href="#" class="link">Tic tac toe</a>
+                                    <a href="#" class="link">Something else</a>
+                                </div>
+                            </div> 
+                    </div>
+            
+                    <a class=link href ="#">About</a>
+                    <a class=link href="#">Contact</a>
+                </div> 
 
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <div class="carousel-pix box-1">1</div>
+                    </div>
 
-                <div class="action-container">
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
+                    <div class="carousel-slides">
+                        <div class="carousel-pix box-2">2</div>
                     </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
+
+                    <div class="carousel-slides">
+                        <div class="carousel-pix box-3">3</div>
                     </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
+
+                    <div class="carousel-slides">
+                        <div class="carousel-pix box-4">4</div>
                     </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Action: Description + picture + button (add to card?)</p>
-                    </div>
+
+<!--                     <div class="carousel-slides">
+                        <div class="carousel-pix box-5">5</div>
+                    </div> -->
+
+                    <button class="carousel-prev-button">Prev</button>
+                    <button class="carousel-next-button">Next</button>
                 </div>
-                <div class="culture-container">
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Culture: Description + picture + button (add to card?)</p>
-                    </div>
-                </div>
-                <div class="food-container">
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>food: Description + picture + button (add to card?)</p>
-                    </div>
-                </div>
-                <div class="love-container">
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    <div class="grid-container">
-                        <p>Romantic: Description + picture + button (add to card?)</p>
-                    </div>
-                    </div>
-                </div>
+
+                <!-- Test section -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quisquam aliquam facere, libero assumenda quas quasi quam aspernatur quis nobis maiores odio dolorum. Exercitationem est suscipit incidunt numquam aliquid quia quo similique voluptate quod totam. Molestias eum, illo quam ab vero veritatis voluptatibus tenetur fuga facilis! Magnam officiis quaerat perspiciatis aliquid. Dignissimos inventore ipsa modi eius totam dolor expedita dicta obcaecati soluta tempore minima, non eos blanditiis accusantium voluptatibus eum dolorem adipisci architecto rerum cum placeat porro eligendi vel consequatur! Porro, consequuntur distinctio. Expedita nam eveniet consectetur veritatis recusandae earum quia quaerat consequuntur, aliquam, ipsam autem magnam repellat impedit dolores repudiandae accusantium eligendi? Eveniet natus cumque dolorem adipisci maiores ipsa sequi nesciunt perspiciatis, similique ullam eaque exercitationem, qui fugit, accusantium suscipit possimus. Facilis placeat perspiciatis minus fugiat? Doloribus tempora non animi rem numquam saepe repellendus facere nisi maiores corrupti. Quos sapiente alias soluta ratione? Distinctio quae quaerat voluptas asperiores, tenetur assumenda deserunt in. Eum quam, accusantium nemo, repellat, exercitationem numquam nostrum nisi accusamus quo rem autem! Voluptates, voluptate minus? Maxime facere, earum illo voluptatibus adipisci vel sapiente incidunt aliquid nesciunt facilis, tenetur asperiores nulla enim! Deserunt tempora officiis nostrum aspernatur excepturi laboriosam itaque tempore molestiae laborum, ea nam molestias, cupiditate omnis quisquam alias optio doloribus, quis illo porro? Illum labore omnis accusamus, suscipit laboriosam maxime aspernatur, ad beatae tempora perspiciatis maiores? Officia nesciunt repudiandae totam nisi facilis impedit reprehenderit eos autem dignissimos quo architecto, fugit quisquam adipisci, dolores voluptate perspiciatis, cum vitae voluptatem odio! Natus, deleniti molestias quae, facilis iste quas modi quam numquam saepe minima laboriosam perferendis eligendi fuga ratione maiores molestiae vero adipisci unde ipsum nemo? Dolore repellat unde similique, optio laboriosam aliquid beatae reprehenderit debitis nostrum, totam delectus accusamus numquam doloribus quaerat dolor! Ullam rerum sed iusto cumque corrupti illum iste quis, modi repellat deserunt nihil amet?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis voluptas, illo ipsam odio exercitationem cum veritatis unde illum. Earum magni aliquam eum quam quaerat, laboriosam iusto esse sequi ducimus voluptate ipsum fugiat dolore nostrum iure, voluptatem qui iste? Exercitationem tempora sint minima ut natus neque rerum magni molestiae quisquam voluptates, nisi nesciunt, maiores ipsum sunt libero veritatis sapiente repudiandae et. Deserunt deleniti cupiditate nostrum itaque veniam voluptatum quos iste provident, quibusdam odio ab ut, repellendus hic nobis velit id officia optio quae doloribus. Praesentium illo molestias numquam dolorum atque aperiam dolor in assumenda est pariatur deleniti quae blanditiis, voluptatum maiores repellat. Maiores laboriosam tenetur quas labore, non nemo fugit itaque, eum perspiciatis sapiente harum exercitationem quis iure quam ipsum fugiat libero hic nesciunt reiciendis quo nihil explicabo quasi! Nesciunt quis consequatur fugit quibusdam fuga voluptatum nisi, praesentium libero ipsum, maiores ad cumque aut ullam delectus enim inventore reprehenderit sit, esse officiis odit in! Quam vel nobis, officia exercitationem et praesentium eveniet nesciunt quae corporis explicabo, temporibus voluptates fugit ratione vitae dolorum aliquam aperiam veritatis obcaecati. Adipisci cum aut fuga consectetur tenetur nemo necessitatibus nisi, quasi reprehenderit hic ea unde ipsam reiciendis, illo inventore maxime praesentium. Magni id recusandae, animi sint quos, quibusdam adipisci ut alias excepturi iure earum ullam quae minus officia dolorem, natus quod pariatur dolor sequi dolores fugiat? Doloremque cum unde aliquam cumque temporibus delectus natus. Voluptatum aperiam fuga sit placeat voluptatibus eligendi, repudiandae, amet provident natus fugit eum architecto illo reprehenderit corporis eveniet corrupti. Ea vel dolorem deleniti aliquam doloribus officiis nam accusantium minima molestias, adipisci culpa tempore. Sapiente ut incidunt enim deserunt illum, voluptas nesciunt. Ducimus libero labore quo ab quos, placeat exercitationem culpa! Adipisci architecto natus blanditiis. Consequuntur veritatis odio dignissimos porro ipsa quaerat, blanditiis est illo sequi in nostrum magnam voluptatum dicta dolorum explicabo alias id, quam harum cum. Ut totam, corporis quia illo fuga nemo ipsum, explicabo provident animi illum nam nihil incidunt dolorem sunt, non tempore accusantium minus iure aut deserunt? Inventore vero ullam ut doloremque accusantium ducimus at saepe recusandae itaque, deleniti fugiat ea quaerat autem asperiores voluptates? Ducimus quasi repellendus suscipit facere! Earum praesentium ut assumenda temporibus iusto dolores illo exercitationem nostrum deserunt! Ea vitae dolorum, iste similique, alias asperiores adipisci ratione totam repudiandae possimus saepe vero doloremque minus optio, dicta sequi blanditiis ullam quos nostrum. Tenetur temporibus quasi dolore? Corrupti dignissimos, harum quod quia ratione aut. Quos recusandae, voluptatibus magnam aliquid laboriosam alias quis saepe consequatur, aliquam quaerat soluta facere dolorum nesciunt mollitia dignissimos ea repudiandae incidunt error. Iste, modi culpa repellendus enim doloremque praesentium. Voluptates amet ipsum totam tempore distinctio praesentium adipisci quaerat et, deleniti ullam? Mollitia exercitationem iure non eius saepe dolorem quidem obcaecati perspiciatis voluptate velit, consectetur beatae veniam, libero reprehenderit odio laborum ipsa, voluptatibus aliquid vitae laboriosam! Facilis architecto reprehenderit iure ipsa repudiandae laborum sunt porro assumenda similique, officiis expedita esse nam fugit, dignissimos sequi? Quasi, autem quaerat molestiae laborum numquam, blanditiis iusto assumenda aut eaque ut fuga veniam omnis ex neque distinctio excepturi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae quo error possimus aspernatur animi quas soluta recusandae. Minus voluptate eum iure. Quam a eveniet impedit qui corporis repellat mollitia, provident et aut ducimus. Pariatur nesciunt incidunt non voluptatibus nam est corporis impedit accusantium delectus praesentium reprehenderit, quas consequuntur, doloremque autem dolor. A mollitia accusantium quos harum, repudiandae atque est debitis. Veritatis id, ea aliquam inventore cum molestias labore nulla earum maiores commodi ab, quod modi tenetur tempore quaerat eos odit recusandae excepturi. Nam temporibus blanditiis delectus cupiditate, sed nesciunt magnam ipsum? Animi, odio ipsa ipsam, dignissimos ea eveniet consectetur voluptate debitis asperiores dolorem in harum repudiandae dolores perspiciatis nostrum impedit itaque tempore. Consectetur ipsam vel natus. Deleniti expedita quam non sint? Inventore, quas? Atque a accusamus sed earum, fuga illum id, facere quisquam culpa doloribus quia consequuntur ipsam corporis, quas delectus obcaecati repudiandae iure animi cupiditate sapiente neque? Consequatur eveniet corrupti perferendis? Nihil cumque aperiam, perspiciatis nulla expedita ad ut mollitia provident, a vel dolor quas dolorum nemo vitae quia. Commodi doloremque voluptatibus porro vero velit laboriosam nostrum exercitationem aspernatur. Quis, doloribus minima. Quibusdam ex dolore culpa facere sint perspiciatis minima libero fugiat! Dolor consectetur quis quam molestias fugit?</p>
+
             </main>
 
         <footer>
@@ -222,6 +135,5 @@
                 <small><a href="mailto:fake@gmail.com">fake@gmail.com</a></small>
             </p>     
         </footer>
-    <script src="index.js"></script>
     </body>
 </html>
