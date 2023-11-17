@@ -29,7 +29,7 @@ header {
 }
 
 .logo-header {
-    margin-left: 10px;
+    
     height: 80px;
     border: solid 2px white;
     background-color: #303235;
@@ -86,21 +86,6 @@ input:focus {
 
 .icons-top a:hover {
     cursor: pointer;
-}
-
-.fa-solid.fa-user-large:hover {
-    color: hsl(0, 0%, 50%);
-}
-
-.fa-regular.fa-heart:hover {
-    color: hsl(0, 0%, 50%);
-}
-
-.fa-solid.fa-bag-shopping:hover {
-    color: hsl(0, 0%, 50%);
-}
-
-.fa-regular.fa-circle-question:hover {
     color: hsl(0, 0%, 50%);
 }
 
@@ -117,9 +102,10 @@ main {
     background-color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-content: baseline;
     padding: .5rem;
-    gap: 1rem;
+    gap: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .link {
@@ -129,13 +115,25 @@ main {
     color: hsl(0, 0%, 0%);
     font-size: inherit;
     font-family: inherit;
-    padding: 0;
     cursor: pointer;  
 }
 
-.dropdown.active > .link, .link:hover {
-    color: hsl(0, 0%, 47%);
-    text-decoration: underline;
+.dropdown-arrow::after {
+    display: inline-block;
+    content: " ❮";
+    transform: translateY(10%) rotate(-90deg);
+    transition: transform 150ms ease;
+}
+
+.dropdown.active > .dropdown-arrow::after {
+    color: hsl(120, 75%, 50%);
+    transform:  rotate(90deg);
+    transition: transform 150ms ease;
+}
+
+.dropdown.active > .link, .link:hover{
+    color: hsl(0, 0%, 50%);
+    font-weight: bold;
 }
 
 .dropdown {
@@ -158,7 +156,7 @@ main {
 
 .dropdown.active > .link + .dropdown-menu {
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
     transform: translateY(0);
     pointer-events: auto;
 }
@@ -176,45 +174,95 @@ main {
 }
 /* carousel */
 .carousel-container {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    font-size: 4rem;
-    text-align: center;
-}
-
-.carousel-pix {
     position: relative;
-    width: 100px;
-    height: 100px;
-    flex-shrink: 1;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.box-1 {
-    background-color: #1f22d1;
-    flex-shrink: 2;
+.carousel-slides {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
 }
 
-.box-2 {
-    background-color: #cf33c8;
-    flex-shrink: 1;
+.carousel-slides > img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
-.box-3 {
-    background-color: #c7e640;
-    flex-shrink: 1;
+.carousel-slides[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
 }
 
-.box-4 {
-    background-color: #6dd653;
-    flex-shrink: 0;
+.bookmark-slide {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-color: none;
+    cursor: pointer;
 }
 
-.box-5 {
-    background-color: #e91f1f;
+.bookmark-slide:hover {
+    color: hsl(350, 100%, 71%);
 }
 
+.text-slide {
+    display: block;
+    border: 1px solid hsl(0, 1%, 80%);
+    background-color: white;
+    color: rgb(255, 0, 0);
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
 
+.carousel-button {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: .75rem;
+    font-size: 2rem;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 600ms ease;
+}
+
+.prev {
+    left: 0px;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+p {
+
+    position: relative;
+}
 /* footer */
 footer {
     height: var(--footer-height);
@@ -225,6 +273,7 @@ footer {
     text-align: center;
     padding: 1px;
     color: white;
+    margin-top: 30px;
 }
 
 .logo-footer {
@@ -242,6 +291,7 @@ footer {
     main{
         width: 100%;
         height: auto;
+        margin: auto;
     }
 
 }
