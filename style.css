@@ -175,10 +175,10 @@ main {
 /* carousel */
 .carousel-container {
     position: relative;
+    width: 100%;
     height: 400px;
-    margin-bottom: 50px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
 
 .carousel-slides {
@@ -192,8 +192,9 @@ main {
 .carousel-slides > img {
     display: block;
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 350px;
+    transition: transform 300ms ease;
+
 }
 
 .carousel-slides[data-active] {
@@ -259,9 +260,8 @@ main {
     border-radius: 3px 0 0 3px;
 }
 
-p {
-
-    position: relative;
+.test {
+    overflow: hidden;
 }
 /* footer */
 footer {
@@ -286,6 +286,12 @@ footer {
     margin-right: 10px;
 }
 
+/********************* Sport.html *********************/
+.path > a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
 /* Screen size*/
 @media screen and (max-width: 400px) {
     main{
@@ -295,3 +301,5 @@ footer {
     }
 
 }
+
+
